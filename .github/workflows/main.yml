@@ -3,7 +3,7 @@ name: Heikin Ashi Hourly Alert
 on:
   schedule:
     # 매시 정각마다 실행 (UTC 기준 0분 = 한국시간 매시 정각)
-    - cron: '0 * * * *'
+    - cron: '3 * * * *'
   # GitHub 탭에서 수동 실행 버튼 활성화
   workflow_dispatch:
 
