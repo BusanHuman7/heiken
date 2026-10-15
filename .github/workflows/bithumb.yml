@@ -2,8 +2,8 @@ name: Bithumb Heikin Ashi Alert
 
 on:
   schedule:
-    # 업비트와 시간이 겹치지 않게 하려면 1~2분 정도 뒤에 실행되도록 설정 가능 (예: 매시 1분)
-    - cron: '1 * * * *'
+    # 업비트와 시간이 겹치지 않게 하려면 1~2분 정도 뒤에 실행되도록 설정 가능 (예: 매시 3분)
+    - cron: '3 * * * *'
   workflow_dispatch:
 
 jobs:
