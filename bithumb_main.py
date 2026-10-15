@@ -55,8 +55,8 @@ def main():
     try:
         df = get_heikin_ashi_data(SYMBOL, TIMEFRAME)
         
-        # 가장 최근에 '완성된' 1시간 봉 (직전 봉: index -2)
-        last_candle = df.iloc[-2]
+        # 가장 최근에 '완성된' 1시간 봉 (직전 봉: index -1)
+        last_candle = df.iloc[-1]
         current_candle = df.iloc[-1]
 
         ha_open = last_candle['ha_open']
